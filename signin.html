@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn1() {
+             var x="qwerty";
+             var y=document.getElementById('password').value;
+            if(x==y)
+                return true;
+            else{    
+                alert('passwaord mismatched')    
+                return false;
+            }
+            
+        }
+        function fn2(x)
+        {
+            console.log(x.validity.valueMissing);
+            if (x.validity.valueMissing)
+            {    x.setCustomValidity('Value cannot be blank');
+                console.log(x.validity)
+        }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <form action=""  onsubmit="return fn1()">
+            <table align="center">
+                
+                <tr>
+                    <td>email</td>
+                    <td><input type="email" name="" onblur="fn2(this)" required id="email"  oninput="this.setCustomValidity('')"><br></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="" id="password" ></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="submit" value="Sign in" onclick="fn1()" oninvalid="fn2(this)"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</body>
+
+</html>

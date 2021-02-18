@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            font-size: 30px;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            background-color: rgba(58, 86, 163, 0.5);
+            color: white;
+            width: 550px;
+            height: 90px;
+            text-align: center;
+            padding-top: 7pt;
+            width: fill;
+            font-size: 30px;
+        }
+        nav li:hover {
+            background-color: teal;
+        }
+
+        #body {
+            text-align: center;
+        }
+
+        body {
+            background-image: url('img2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        video {
+
+            width: 700px;
+            height: 400px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="head">
+
+        <input type="button" value="Sign in" href="signin.html" style="font-size: 20px;" onclick="location.href='signin.html'">
+        <input type="button" value="Get started" style="font-size: 20px;">
+    </div>
+
+    <nav id="nav1">
+        <ul type="none">
+            <li><img src="logo.jpg" width="100px" height="100px"></li>
+            <li><b>Quick code</b></li>
+            <li>Top courses</li>
+            <li>submit articles</li>
+            <li>Web dev</li>
+            <li>Mobile dev</li>
+            <li>Programming</li>
+            <li><input type="button" value="Quick code" style="font-size: 25px;"></li>
+        </ul>
+    </nav>
+    <div id="body">
+        <h1 style="color: rgb(168, 172, 204); font-size: 50px;">Linux Tutorials</h1>
+
+        <video src="video1.mkv" controls poster="img5.png"></video>
+
+    </div>
+</body>
+
+</html>
